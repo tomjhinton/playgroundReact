@@ -16,18 +16,21 @@
 
 
 .main{
+  
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
 .block{
   border: 1px solid black;
-  width: 50vw;
+  width: 20vw;
   height: 25vh;
   margin: 4vh;
   align-items: center;
   justify-content: center;
+  padding: 2%;
 
 }
 .block:hover{
@@ -208,4 +211,122 @@ clip-path: polygon(0 30%,
   font-weight: bold;
 
 
+}
+
+.sixth{
+   transition: all 2000ms ease;
+   display: inline-flex;
+   flex-wrap: wrap;
+   align-items: center;
+   align-content: center;
+  font-family: 'Tapeworm';
+  color:black;
+  background-color: black;
+    background-clip: text;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+  span{
+    margin-right: 5px;
+  }
+}
+
+.sixth:hover{
+  font-family: 'Tapeworm';
+  background-clip: text;
+  color: rgba(255,255,255,0.8);
+  box-shadow: 13px 13px 7px 0px;
+
+
+
+}
+
+
+
+.split6:hover{
+  font-family: 'Passio';
+  color:black;
+  background-color: white;
+  border-radius: 1px;
+  font-weight: bold;
+
+
+}
+
+.seventh{
+   transition: all 2000ms ease;
+   display: inline-flex;
+   flex-wrap: wrap;
+   align-items: center;
+   align-content: center;
+  font-family: 'Tapeworm';
+  color:white;
+  background-color: black;
+    background-clip: text;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    animation-name: reveal;
+      animation-duration: 3000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+      @-ms-keyframes reveal {
+          from {
+              -ms-transform: rotateY(0deg);
+          } to {
+              -ms-transform: rotateY(360deg);
+          }
+      }
+      @-moz-keyframes reveal {
+          from {
+              -moz-transform: rotateY(0deg);
+          } to {
+              -moz-transform: rotateY(360deg);
+          }
+      }
+      @-webkit-keyframes reveal {
+          from {
+              -webkit-transform: rotateY(0deg);
+          } to {
+              -webkit-transform: rotateY(360deg);
+          }
+      }
+      @keyframes reveal {
+        from {
+          clip-path: circle(0.2% at 50% 50%);;
+        } to {
+            clip-path: circle(100.2% at 50% 50%);;
+        }
+      }
+
+  span{
+    margin-right: 5px;
+  }
+}
+
+.seventh:hover{
+  font-family: 'Tapeworm';
+  background-clip: text;
+  color: rgba(255,255,255,0.8);
+  box-shadow: 13px 13px 7px 0px;
+
+
+
+}
+
+
+
+.split7:hover{
+  font-family: 'Passio';
+  color:black;
+  background-color: white;
+  border-radius: 1px;
+  font-weight: bold;
+
+
+}
+
+#points{
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  position: absolute;
 }
