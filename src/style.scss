@@ -1,0 +1,19 @@
+.main{
+  display: flex;
+}
+
+.block{
+  border: 1px solid black;
+  width: 50vw;
+  height: 25vh;
+  margin: 4vh;
+
+}
+
+.split{
+  flex-wrap: wrap;
+
+}
+.split:hover{
+  color: red;
+}
