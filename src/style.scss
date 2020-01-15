@@ -1,5 +1,24 @@
+
+@font-face {
+  font-family: "Passio";
+  src: url("assets/Passio-Graphis.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Tapeworm";
+  src: url("assets/Tapeworm-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Ferrite";
+  src: url("assets/FerriteCore-Regular.otf") format("opentype");
+}
+
+
 .main{
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .block{
@@ -7,6 +26,11 @@
   width: 50vw;
   height: 25vh;
   margin: 4vh;
+  align-items: center;
+  justify-content: center;
+
+}
+.block:hover{
 
 }
 
@@ -15,5 +39,126 @@
 
 }
 .split:hover{
-  color: red;
+   display: inline-block;
+  font-family: 'Passio';
+  font-weight:900;
+  animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @-ms-keyframes spin {
+        from {
+            -ms-transform: rotateY(0deg);
+        } to {
+            -ms-transform: rotateY(360deg);
+        }
+    }
+    @-moz-keyframes spin {
+        from {
+            -moz-transform: rotateY(0deg);
+        } to {
+            -moz-transform: rotateY(360deg);
+        }
+    }
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        } to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+        } to {
+            transform: rotateY(360deg);
+        }
+    }
+  }
+
+.second{
+  font-family: 'Passio';
+  color:white;
+  background-color: black;
+
+}
+.second:hover{
+
+}
+
+.split2:hover{
+  border-radius: 50px;
+  color:black;
+  background-color: white;
+
+}
+
+.third{
+   transition: all 1000ms ease-out;
+  font-family: 'Passio';
+  color:black;
+  background-color: black;
+clip-path: polygon(0 30%,
+    30% 0,
+    100% 0,
+    100% 70%,
+    70% 100%,
+    0 100%);
+}
+
+.third:hover{
+  font-family: 'Passio';
+  color:white;
+  background-color: black;
+  clip-path: polygon(0 0,
+   50% 0,
+   100% 0,
+   100% 50%,
+   100% 100%,
+   0 100%);
+
+
+}
+
+
+
+.split3:hover{
+  font-family: 'Passio';
+  color:black;
+  background-color: white;
+  border-radius: 50px;
+  font-weight: bold;
+
+
+}
+
+.fourth{
+   transition: all 2000ms ease;
+  font-family: 'Passio';
+  color:black;
+  background-color: black;
+  clip-path: circle(40.2% at 50% 50%);
+}
+
+.fourth:hover{
+  font-family: 'Passio';
+  color:white;
+  background-color: black;
+  clip-path: circle(140.2% at 50% 50%);
+
+
+
+}
+
+
+
+.split4:hover{
+  font-family: 'Passio';
+  color:black;
+  background-color: white;
+  border-radius: 50px;
+  font-weight: bold;
+
+
 }

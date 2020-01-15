@@ -2,7 +2,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-let text = 'The sky above the port was the colour of a television tuned to a dead channel.'.split('')
+let text = 'The sky above the port was the colour of a television tuned to a dead channel.'
 
 class Main extends React.Component{
   constructor(){
@@ -52,25 +52,40 @@ class Main extends React.Component{
 
     return (
       <div className='main'>
-        <div className='block' onMouseOver={this.wordSplit}>
-          {text.map(x=>{
+        <div className='block'>
+          {text.split(' ').map((x,index)=>{
 
             return(
-              <span key={text.indexOf(x)} className="split">{x}</span>
+              <span key={index} className="split">{x+' '}</span>
             )
           })}
         </div>
 
-        <div className='block'>
-        The sky above the port was the colour of a television tuned to a dead channel.
+        <div className='block second'>
+          {text.split(' ').map((x,index)=>{
+
+            return(
+              <span key={index} className="split2">{x+' '}</span>
+            )
+          })}
         </div>
 
-        <div className='block'>
-        The sky above the port was the colour of a television tuned to a dead channel.
+        <div className='block third'>
+          {text.split(' ').map((x,index)=>{
+
+            return(
+              <span key={index} className="split3">{x+' '}</span>
+            )
+          })}
         </div>
 
-        <div className='block'>
-        The sky above the port was the colour of a television tuned to a dead channel.
+        <div className='block fourth'>
+          {text.split(' ').map((x,index)=>{
+
+            return(
+              <span key={index} className="split4">{x+' '}</span>
+            )
+          })}
         </div>
 
         <div className='block'>
