@@ -139,6 +139,13 @@ clip-path: polygon(0 30%,
   color:black;
   background-color: black;
   clip-path: circle(40.2% at 50% 50%);
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  span{
+    margin-right: 5px;
+  }
 }
 
 .fourth:hover{
@@ -154,6 +161,46 @@ clip-path: polygon(0 30%,
 
 
 .split4:hover{
+  font-family: 'Passio';
+  color:black;
+  background-color: white;
+  border-radius: 50px;
+  font-weight: bold;
+
+
+}
+
+
+.fifth{
+   transition: all 2000ms ease;
+   display: inline-flex;
+   flex-wrap: wrap;
+   align-items: center;
+   align-content: center;
+  font-family: 'Passio';
+  color:black;
+  background-color: black;
+    background-clip: text;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+  span{
+    margin-right: 5px;
+  }
+}
+
+.fifth:hover{
+  font-family: 'Passio';
+  background-clip: text;
+  color: rgba(255,255,255,0.8);
+  box-shadow: 13px 13px 7px 0px;
+
+
+
+}
+
+
+
+.split5:hover{
   font-family: 'Passio';
   color:black;
   background-color: white;

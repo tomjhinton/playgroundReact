@@ -88,8 +88,13 @@ class Main extends React.Component{
           })}
         </div>
 
-        <div className='block'>
-        The sky above the port was the colour of a television tuned to a dead channel.
+        <div className='block fifth'>
+          {text.split(' ').map((x,index)=>{
+
+            return(
+              <span key={index} className="split5">{x+' '}</span>
+            )
+          })}
         </div>
 
         <div className='block'>
